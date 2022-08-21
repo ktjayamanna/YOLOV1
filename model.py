@@ -109,11 +109,11 @@ class Yolov1(nn.Module):
         )
 
 #Enable this for a sanity check...
-# def test(S=7, B=2, C=20):
-#     model=Yolov1(split_size=S, num_boxes = B, num_classes=C)
-#     x=torch.randn((2, 3, 448, 448))
-#     print(model(x).shape)
+def test(S=7, B=2, C=20):
+    model=Yolov1(split_size=S, num_boxes = B, num_classes=C)
+    x=torch.randn((2, 3, 448, 448))
+    print(model(x).shape)
 
-# test()
+test()
 
     
